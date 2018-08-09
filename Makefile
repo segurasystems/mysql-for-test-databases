@@ -5,7 +5,7 @@ prepare:
 
 build: prepare build-work
 build-work:
-	docker build --squash -t index.segurasystems.com/mysql/test-databases:latest .
+	docker build -t index.segurasystems.com/mysql/test-databases:latest .
 
 push: build push-work
 push-work:
